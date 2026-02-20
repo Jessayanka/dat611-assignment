@@ -1,8 +1,5 @@
-
 //task1
-function squareArray(numbers) {
-    return numbers.map(num => num * num);
-}
+
 
 function multiplyAll(numbers) {
     if (numbers.length === 0) return 0;
@@ -12,7 +9,7 @@ function multiplyAll(numbers) {
 function multiplyThrough(...args){
     return args.reduce((product, num) => product * num, 1);
 }
-console.log("The squares of the numbers are:" + " "+ squareArray([16, 9, 11, 4])); 
+
 console.log("The cumulative product of the numbers is:" + " "+ multiplyAll([8, 2, 5, 6]));
 console.log("The product of the numbers is:" + " "+ multiplyThrough(8, 2, 5, 6));
 
